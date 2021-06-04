@@ -42,5 +42,7 @@ After downloading, it's necessary to run the following commands on the terminal:
 * yarn add @material-ui/core
 * yarn start
 
-however, the application can also be viewed on the website
+however, the application can also be viewed on the following website
 not requiring installation
+
+https://painting-walls-cans.vercel.app/
