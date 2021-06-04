@@ -36,11 +36,11 @@ After defining the total area, the button "Calculate Cans" is used to determine 
 
 After downloading, it's necessary to run the following commands on the terminal:
 
-yarn add react-router-dom
-yarn add styled-components
-yarn add framer-motion
-yarn add @material-ui/core
-yarn start
+* yarn add react-router-dom
+* yarn add styled-components
+* yarn add framer-motion
+* yarn add @material-ui/core
+* yarn start
 
 however, the application can also be viewed on the website
 not requiring installation
