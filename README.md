@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Painting Walls Cans Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Version 1.0.0**
 
-## Available Scripts
+This is a small project, firstly created to achieve the requirements for a test, so it's a prototype.
+The app aims to calculate how many cans of paintings would be necessary to paint specified walls.
+There were some rules in which logic had to be established, such as minimum and maximum width of walls, and minimum wall height.
 
-In the project directory, you can run:
+The app has two main features,
 
-### `yarn start`
+### 1-Wall Module
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This calculates the area of one wall only, adding as many walls or windows intended within the limit of 50% of the total area.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Room Module
 
-### `yarn test`
+This calculates the area of four walls. It's possible to discount doors and windows from the total area within the limit of 50% of the total area.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+After defining the total area, the button "Calculate Cans" is used to determine the numbers of each type of can.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. The walls can't be more than 15 meters or less than 1-meter in width. The input area doesn't accept values out of range.
+2. When including doors and windows, the area left should be more than 50% of the total area.
+3. The wall height must be 30cm more than the door, that's why it's initialized as 2.2 meters.
+4. Each window is 2,00 x 1,20 meters, therefore 2.4m² as a result.
+5. Each door is 0,80 x 1,90 meters, therefore 1.52m² as a result.
+6. One litter of panting can cover 5m².
+7. We don't consider ceiling or floor.
+8. The painting cans sizes are respectively: 0,5L, 2,5L, 3,6L, 18L
 
-### `yarn eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+After downloading, it's necessary to run the following commands on the terminal:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+yarn add react-router-dom
+yarn add styled-components
+yarn add framer-motion
+yarn add @material-ui/core
+yarn start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+however, the application can also be viewed on the website
+not requiring installation

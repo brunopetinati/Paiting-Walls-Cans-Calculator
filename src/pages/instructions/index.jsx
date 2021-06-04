@@ -32,7 +32,7 @@ const Instructions = () => {
               Each door is 0,80 x 1,90 meters, therefore 1.52m² as a result.
             </li>
             <li>One litter of panting can cover 5m².</li>
-            <li>We don't consider roof or floor.</li>
+            <li>We don't consider ceiling or floor.</li>
             <li>
               The painting cans sizes are respectively: 0,5L, 2,5L, 3,6L, 18L
             </li>
