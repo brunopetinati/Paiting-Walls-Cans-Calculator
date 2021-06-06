@@ -5,6 +5,7 @@ import {
   StyledRedButton,
   CoreForm,
   Title,
+  StyledInput,
 } from "../../pages/styles";
 
 const Core = () => {
@@ -125,28 +126,29 @@ const Core = () => {
         <div>Third wall width = {wall3}</div>
         <div>Fourth wall width = {wall4}</div>
       </div>
+      <p />
       <CoreForm>
-        <input
+        <StyledInput
           type="number"
           onChange={(e) => setHeight(Number(e.target.value))}
           placeholder="Height"
         />
-        <input
+        <StyledInput
           type="number"
           onChange={(e) => setWall1(Number(e.target.value))}
           placeholder="First wall width"
         />
-        <input
+        <StyledInput
           type="number"
           onChange={(e) => setWall2(Number(e.target.value))}
           placeholder="Second wall width"
         />
-        <input
+        <StyledInput
           type="number"
           onChange={(e) => setWall3(Number(e.target.value))}
           placeholder="Third wall width"
         />
-        <input
+        <StyledInput
           type="number"
           onChange={(e) => setWall4(Number(e.target.value))}
           placeholder="Fourth wall width"

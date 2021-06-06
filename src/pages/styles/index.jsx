@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Button from "@material-ui/core/Button";
+import Input from "@material-ui/core/Input";
 
 export const Container = styled.div`
   display: flex;
@@ -127,3 +128,5 @@ export const Title = styled.div`
   letter-spacing: 2.5px;
   color: #3a5dce;
 `;
+
+export const StyledInput = styled(Input)``;

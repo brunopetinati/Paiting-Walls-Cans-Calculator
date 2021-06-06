@@ -5,6 +5,7 @@ import {
   StyledRedButton,
   WallForm,
   Title,
+  StyledInput,
 } from "../../pages/styles";
 
 const Wall = () => {
@@ -110,12 +111,12 @@ const Wall = () => {
         <div>Wall width = {wall1}</div>
       </div>
       <WallForm>
-        <input
+        <StyledInput
           type="number"
           onChange={(e) => setHeight(Number(e.target.value))}
           placeholder="Height"
         />
-        <input
+        <StyledInput
           type="number"
           onChange={(e) => setWall1(Number(e.target.value))}
           placeholder="Wall width"
